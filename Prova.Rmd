@@ -1,0 +1,118 @@
+---
+title: "Essays in -"
+author: "Luisa Carrer"
+date: "26-10-2023"
+output:
+  xaringan::moon_reader:
+   css: [default, metropolis, metropolis-fonts]
+
+---
+
+```{r xaringan-panelset, echo=FALSE}
+xaringanExtra::use_panelset()
+```
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(include = TRUE,
+                      echo = FALSE,
+                      message = FALSE,
+                      warning = FALSE)
+```
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+penguins <- read_csv("https://raw.githubusercontent.com/rfortherestofus/r-without-statistics/main/data/penguins-2008.csv")
+```
+
+
+# Introduction
+
+We are writing a report about the **Palmer Penguins**. These penguins are *really* amazing. There are three species:
+
+- Chapter 1: *Learning about in-group or out-group facts and the role of the presenter*
+    - What is the impact on mipserpception and learning of racial identity congruence?
+- Chapter 2: *Identity Characteristics and Judgments on Research(er) Quality*
+    - What is the impact of idernity of research content and author on how they are perceived?
+- Chapter 3: *Gender-segregated events: soccer and gender norms*
+    - What is the impact of idernity of research content and author on how they are perceived?
+
+
+---
+
+[comment]: # (CHAPTER 1)
+
+class: inverse, right, middle
+# Learning about in-group or out-group facts and the role of the presenter
+
+---
+
+.panelset[
+.panel[.panel-name[Congruence 1]
+
+```r
+hist(runif(100))
+```
+]
+
+.panel[.panel-name[Congruence 2]
+
+Take a look at the R code in that other panel.
+]
+]
+
+
+
+---
+
+[comment]: # (CHAPTER 2)
+
+class: inverse, right, middle
+# Identity Characteristics and Judgments on Research(er) Quality
+
+---
+
+---
+
+[comment]: # (CHAPTER 3)
+class: inverse, right, middle
+# Gender-segregated events: soccer and gender norms
+
+---
+
+#Introduction
+
+- Role of gender norms in perpetuating gender gaps
+-
+
+
+- Male dominated sport in terms of fanship base in certain countries
+
+-  I study how individuals’ gender norms can evolve in their formative years when they are exposed to an environment where these gendered norms become more salient.
+
+- Short-term effects
+ - Immediate (one-year) effects of teenage pupils on school choices
+- Long-term effects
+ - Long-term effects on gender norms
+
+
+---
+
+#Data
+
+### Soccer
+- Italian football I and II division
+- Scraped from various online sources
+- Constructed 1945-2018 final results
+
+### School from MIUR
+- High school-level data from 2015-2019
+- New entry
+
+### Value
+- European Value Survey data at NUTS3
+
+
