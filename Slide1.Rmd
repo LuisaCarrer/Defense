@@ -23,21 +23,25 @@ knitr::opts_chunk$set(include = TRUE,
 
 ```{r}
 library(tidyverse)
+library(here)
+library(knitr)    # For knitting document and include_graphics function
+library(ggplot2)  # For plotting
+library(png)      # For grabbing the dimensions of png files
 ```
 
-```{r}
-penguins <- read_csv("https://raw.githubusercontent.com/rfortherestofus/r-without-statistics/main/data/penguins-2008.csv")
-```
 
 
-# Introduction
+# Overview
 
-We are writing a report about the **Palmer Penguins**. These penguins are *really* amazing. There are three species:
+
+
 
 - Chapter 1: *Learning about in-group or out-group facts and the role of the presenter*
     - What is the impact on mipserpception and learning of racial identity congruence?
+
 - Chapter 2: *Identity Characteristics and Judgments on Research(er) Quality*
     - What is the impact of idernity of research content and author on how they are perceived?
+
 - Chapter 3: *Gender-segregated events: soccer and gender norms*
     - What is the impact of idernity of research content and author on how they are perceived?
 
@@ -50,6 +54,34 @@ class: inverse, right, middle
 # Learning about in-group or out-group facts and the role of the presenter
 
 ---
+
+# Introduction
+
+.pull-left[
+<img src="info_black.png" width="200" height="200" />
+
+![some caption](info_black.png)
+
+
+```{r, out.width='25%', fig.align='center', fig.cap='RStudio Logo'}
+knitr::include_graphics("info_black.png")
+```
+]
+
+
+.pull-right[
+Most communication have at least three
+components :
+
+1. Presenter;
+
+1. Receiver;
+
+1. Information Content;
+
+]
+---
+
 
 .panelset[
 .panel[.panel-name[Congruence 1]
@@ -64,7 +96,6 @@ hist(runif(100))
 Take a look at the R code in that other panel.
 ]
 ]
-
 
 
 ---

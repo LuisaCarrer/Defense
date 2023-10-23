@@ -1,0 +1,40 @@
+\begin{table}[!h]
+
+\caption{Misperceptions\label{tab:main1}}
+\centering
+\begin{threeparttable}
+\begin{tabular}[t]{lcccccc}
+\toprule
+\multicolumn{1}{c}{ } & \multicolumn{2}{c}{Presenter/Audience} & \multicolumn{2}{c}{Audience/Info} & \multicolumn{2}{c}{Presenter/Info} \\
+\cmidrule(l{3pt}r{3pt}){2-3} \cmidrule(l{3pt}r{3pt}){4-5} \cmidrule(l{3pt}r{3pt}){6-7}
+  & (1) & (2) & (3) & (4) & (5) & (6)\\
+\midrule
+Congruence & \num{-0.003} & \num{0.021} & \num{-1.401}*** & \num{-1.401}*** & \num{-1.326}*** & \num{-1.321}***\\
+ & (\num{0.334}) & (\num{0.333}) & (\num{0.194}) & (\num{0.194}) & (\num{0.195}) & (\num{0.195})\\
+Black stratum & \num{4.457}*** & \num{4.626}*** & \num{2.804}*** & \num{2.886}*** & \num{2.802}*** & \num{2.885}***\\
+ & (\num{0.334}) & (\num{0.338}) & (\num{0.418}) & (\num{0.425}) & (\num{0.418}) & (\num{0.425})\\
+Black video &  &  & \num{0.009} & \num{-0.006} & \num{0.011} & \num{-0.004}\\
+ &  &  & (\num{0.417}) & (\num{0.415}) & (\num{0.417}) & (\num{0.415})\\
+Constant & \num{10.630}*** & \num{9.994}*** & \num{9.655}*** & \num{11.016}*** & \num{9.635}*** & \num{11.000}***\\
+ & (\num{0.281}) & (\num{0.782}) & (\num{0.350}) & (\num{0.936}) & (\num{0.350}) & (\num{0.938})\\
+\midrule
+N & \num{17026} & \num{17026} & \num{7570} & \num{7570} & \num{7570} & \num{7570}\\
+R$2$ & \num{0.026} & \num{0.030} & \num{0.017} & \num{0.026} & \num{0.017} & \num{0.026}\\
+Adj.R$2$ & \num{0.026} & \num{0.030} & \num{0.017} & \num{0.024} & \num{0.017} & \num{0.024}\\
+Demographic\\controls & No & Yes & No & Yes & No & Yes\\
+\bottomrule
+\multicolumn{7}{l}{\rule{0pt}{1em}* p $<$ 0.05, ** p $<$ 0.01, *** p $<$ 0.001}\\
+\end{tabular}
+\begin{tablenotes}[para]
+\item \textit{Note: } 
+\item Standard errors in parenthesis are clustered at the individual level. 
+            Observations are at the individual-fact level. 
+            The outcome variable is the absolute value of the difference between reported posterior and signal.
+            Congruence identifies the dummy variable used to study each concordant interaction. 
+            For \textit{Congruence 1}, tested in column (1) and (2), the variable takes value 1 if participant has the same identity as the presenter. 
+            For \textit{Congruence 2} tested in column (3) and (4), the variable takes value 1 if the information pertains to the same social group as the participant.
+            For \textit{Congruence 3} tested in column (5) and (6), the variable takes value 1 if the information pertains to the same social group as the presenter's.
+            Additional demographic controls include the following: dummy variable indicating whether the respondent indicated being female, democrat, republican, employed, having at least a bachelor degree, born abroad, income brackets, and a continuos variable indicating age.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
